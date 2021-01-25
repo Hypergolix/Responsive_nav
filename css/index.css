@@ -1,0 +1,93 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  width: 80vw;
+  /*Or justify center*/
+  margin: auto;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.dropMenu__right {
+  display: none;
+}
+
+.dropMenu__right:active {
+  /*can't hover on touchscreen anyway*/
+  filter: brightness(50);
+}
+.navBar__top {
+  margin-top: 62px;
+  max-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: fit-content;
+  max-width: 40%;
+}
+
+.navLinks__top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 50%;
+  min-width: fit-content; /**/
+  margin-left: 20px;
+}
+
+.navLinks__top li {
+  margin-left: 10px;
+  display: flex;
+}
+
+main {
+  overflow-y: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.mainContent__left {
+  background-color: #000000;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-top: 185px;
+  /*width: 416px;
+    parent div does not respect width
+  */
+  flex: 0 0 416px;
+  max-height: 244px; /* min-height to respect vertical*/
+}
+
+.imgContainer__right {
+  display: flex;
+  max-width: 585px;
+  width: 100%;
+  height: 690px;
+  background-image: url("img/main_img_large.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+/* 
+main img {
+  remove srcset to fix
+  max-width: 90%;
+  height: auto;
+
+  display: block;
+}
+ srcset="/img/main_img_large.png 1024w,
+ /img/main_img_medium.png 768w,
+ /img/main_img_small.png 320w" 
+
+ */
